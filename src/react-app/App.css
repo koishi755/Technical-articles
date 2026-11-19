@@ -1,0 +1,177 @@
+#root {
+	/* max-width: 1280px; */
+	margin: 0 auto;
+	/* padding: 2rem; */
+	text-align: center;
+}
+
+#main {
+    text-align: left;
+}
+
+#home {
+	text-align: center;
+}
+
+.left-sidebar {
+	text-align: left;
+}
+
+.logo {
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
+}
+.logo:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.cloudflare:hover {
+	filter: drop-shadow(0 0 2em #f6821faa);
+}
+
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+.card {
+	padding: 2em;
+}
+
+.read-the-docs {
+	color: #888;
+}
+
+.bg-event {
+    background-image: linear-gradient(90deg, #344fa5 0%, #121317 100%);
+}
+
+.language-.bash {
+
+}
+
+pre {
+    padding: 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2e1f5e;
+}
+
+pre~button.copybtn {
+    opacity: 1;
+}
+
+
+button.copybtn {
+    position: absolute;
+    display: flex;
+    top: .3em;
+    right: .3em;
+    width: 1.7em;
+    height: 1.7em;
+    /* opacity: 0; */
+    transition: opacity 0.3s, border .3s, background-color .3s;
+    user-select: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 0.4em;
+    border: #1b1f2426 1px solid;
+    background-color: #f6f8fa;
+    color: #57606a;
+}
+
+.o-tooltip--left:after {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    content: attr(data-tooltip);
+    padding: .2em;
+    font-size: .8em;
+    left: -.2em;
+    background: grey;
+    color: white;
+    white-space: nowrap;
+    z-index: 2;
+    border-radius: 2px;
+    transform: translateX(-102%) translateY(0);
+    transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.o-tooltip--left:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+/* svg[Attributes Style] {
+    width: 44;
+    height: 44;
+    stroke-width: 1.5;
+    stroke: rgb(0, 0, 0);
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+} */
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+button.copybtn svg {
+    stroke: currentColor;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0.1em;
+}
+
+/* テーブル全体のデザイン */
+.markdown-body table,
+div table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* ヘッダー（th）のデザイン */
+.markdown-body th,
+div th {
+    background-color: #e9ecef;
+    color: #333;
+    padding: 12px 15px;
+    border-bottom: 2px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    font-weight: bold;
+}
+
+/* データセル（td）のデザイン */
+.markdown-body td,
+div td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    color: #333;
+}
